@@ -1,0 +1,4 @@
+Problem observed here was "Count to Infinity"
+When the links between B->C ,C->B are updated, the table gets updated again and again before it converges to max hop limit.
+Due to this , it wastes a lot of computation power and in real world secenario a lot of data could be lost if router wants to send before it gets updated.
+How to over this? Use poison reverse technique, as done in next part.
